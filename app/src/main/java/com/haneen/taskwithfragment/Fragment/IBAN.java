@@ -22,7 +22,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.haneen.taskwithfragment.R;
-
+import com.haneen.taskwithfragment.databinding.ActivityMainBinding;
 
 
 public class IBAN extends Fragment {
@@ -31,6 +31,7 @@ public class IBAN extends Fragment {
     EditText Edit;
     Button Button;
     TextView text;
+    ActivityMainBinding activityMainBinding;
 
 
     @Override
@@ -44,6 +45,10 @@ public class IBAN extends Fragment {
         Edit = view.findViewById(R.id.IBANID);
         IBAN = view.findViewById(R.id.textView2);
         text = view.findViewById(R.id.text);
+//        activityMainBinding=ActivityMainBinding.inflate(getLayoutInflater());
+//        View view1=activityMainBinding.getRoot();
+//        ViewGroup viewGroup = (ViewGroup) inflater.inflate(R.layout.fragment_iban, container, false);
+//        setContentView(view1);
         Button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 System.out.println("mEdit: " + Edit.getText().toString());

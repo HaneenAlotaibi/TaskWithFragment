@@ -5,6 +5,10 @@ plugins {
 android {
     namespace 'com.haneen.taskwithfragment'
     compileSdk 33
+    buildFeatures {
+        viewBinding true
+    }
+    viewBinding.enabled =true
 
     defaultConfig {
         applicationId "com.haneen.taskwithfragment"
